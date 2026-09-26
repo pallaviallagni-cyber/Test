@@ -28,7 +28,7 @@ jobs:
          run: flake8 src tests --max-line-length=100
 
        - name: Run tests
-         run: pytest --junitxml=results.xml -v4
+         run: pytest --junitxml=results.xml -v
 
        - name: upload test results
          if: always()
